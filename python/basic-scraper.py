@@ -3,4 +3,7 @@ from bs4 import BeautifulSoup
 with open("../html/main.html", "r") as f:
     doc = BeautifulSoup(f, "html.parser")
 
-print(doc.prettify)
+tags = doc.find_all('p')
+
+
+print(tags)
