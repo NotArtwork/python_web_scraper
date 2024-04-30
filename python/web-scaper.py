@@ -9,4 +9,6 @@ doc = BeautifulSoup(result.text, "html.parser")
 prices = doc.find_all(text="$")
 parent = prices[0].parent
 strong = parent.find("strong")
-print(strong.string)
+
+for i in prices:
+    print(prices[i])
